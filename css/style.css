@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+.nav__text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.main__container {
+  display: flex;
+  width: 100%;
+}
+
+/* -------------------- SIDEBAR ---------------------------- */
+.sidebar {
+  width: 239px;
+  height: 1466px;
+  /* Neutral / White */
+  background: #FFFFFF;
+  box-shadow: 4px 0px 16px rgba(30, 30, 30, 0.08);
+  z-index: 2;
+}
+
+.brand {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+
+.brand__icon {
+  width: 7.42px;
+  height: 7.79px;
+  padding: 0.5rem;
+  margin-right: 1.2rem;
+  background: #FF7474;
+  box-shadow: 1px 1px 0px rgba(102, 111, 130, 0.175243);
+}
+
+.brand__name {
+  width: 82px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30.05px;
+  /* identical to box height */
+}
+
+.sidebar__nav {
+  width: 200px;
+  height: 530px;
+  padding: 1rem;
+}
+
+.sidebar__nav__item {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.nav__icon {
+  margin-right: 0.8rem;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.dashboard {
+    font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sidebar__dropdown__content {
+  width: 100%;
+  font-size: 14px;
+  line-height: 209.1%;
+  /* or 29px */
+  opacity: 0.6;
+}
+
+.nav__sub__menu {
+  padding: 8px 0 11px 35px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.downbutton {
+  position: absolute;
+  left: 10rem;
+}
+.rotate__btn {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+/* ------------------------------------ HEADER BASE ----------------------- */
+.main__section {
+  width: 100%;
+}
+
+.header__base {
+  height: 60px;
+  /* Neutral / White */
+  background: #FFFFFF;
+  box-shadow: 4px 0px 16px 10px rgba(30, 30, 30, 0.08);
+  display: flex;
+  padding: 1rem;
+}
+
+.header__icon {
+  width: 22.26px;
+  height: 22px;
+  font-size: 22px;
+  line-height: 22px;
+/* identical to box height */
+  opacity: 0.3;
+  margin-right: 0.8rem;
+}
+
+.header__text {
+  width: 265.13px;
+  height: 22px;
+  opacity: 0.3;
+}
+
+.header__text input[type="text"]{
+  width: 100%;
+}
+
+.header__bell {
+  width: 25.3px;
+  height: 25px;
+  background: #EFF3F9;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+
+.header__bell__icon {
+  font-size: 12px;
+
+/* identical to box height */
+  color: #000000;
+  opacity: 0.5;
+  align-items: center;
+}
+
+.header__base__logo {
+  width: 25.3px;
+  height: 25px;
+  background: url(../images/Logo.png);
+  border-radius: 2px;
+}
+
+.header__left {
+  display: flex;
+  margin-right: 49rem;
+}
+
+.header__right {
+  display: flex;
+}
+
+/* ------------------------------------ HERO SECTION ----------------------- */
+.hero__img__1{
+  height: 568.53px;
+}
+
+.hero__img__2 {
+  height: 250px;
+}
+
+.hero__img__3 {
+  height: 590.83px;
+}

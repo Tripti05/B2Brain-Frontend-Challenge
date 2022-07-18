@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>B2Brain Dashboard</title>
+
+
+  <!-------------- GOOGLE FONTS (POPPINS)----------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+  <!------------------ STYLESHEET  -------------------------->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e1e0720711.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="main__container">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand__icon"></div>
+        <span class="nav__text">B2Brain</span>
+      </div>
+
+
+      <ul class="sidebar__nav">
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text dashboard">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Intels</span>
+          </a>
+        </li>
+
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Leads</span>
+          </a>
+        </li>
+
+        <li class="sidebar__nav__item dropdown">
+          <a class="sidebar__dropdown" href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Accounts</span>
+            <span class="fas fa-caret-down nav__icon downbutton"></span>
+          </a>
+          <ul class="nav__sub__menu">
+            <li><a class="nav__text sidebar__dropdown__content">Manage All</a></li>
+            <li><a class="nav__text sidebar__dropdown__content">Track new accounts </a></li>
+            <li><a class="nav__text sidebar__dropdown__content">Bulk Import</a></li>
+          </ul>
+        </li>
+
+        <li class="sidebar__nav__item dropdown">
+          <a class="sidebar__dropdown" href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Preferences</span>
+            <span class="fas fa-caret-down nav__icon downbutton"></span>
+          </a>
+          <ul class="nav__sub__menu">
+            <li><a class="nav__text sidebar__dropdown__content">Product Focus</a></li>
+            <li><a class="nav__text sidebar__dropdown__content">Intel Preferences</a></li>
+            <li><a class="nav__text sidebar__dropdown__content">Lead Persona</a></li>
+          </ul>
+        </li>
+
+
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Integrations</span>
+          </a>
+        </li>
+
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Team</span>
+          </a>
+        </li>
+
+        <li class="sidebar__nav__item">
+          <a href="#">
+            <i class="fas fa-regular fa-star nav__icon"></i>
+            <span class="nav__text">Help/Support</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!------------------------ END OF SIDEBAR ---------------------------->
+
+
+    <div class="main__section">
+
+      <header class="header__base">
+        <div class="header__left">
+          <div class="header__icon"><i class="fas fa-regular fa-star nav__icon"></i></div>
+          <div>
+            <form action="/" method="get">
+              <div class="nav__text header__text">
+                <input id="searchInput" type="text" name="" value="" placeholder="Search by account name or website" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <div class="header__bell">
+            <i class="fas fa-regular fa-star header__bell__icon"></i>
+          </div>
+
+          <div class="header__base__logo"></div>
+        </div>
+
+      </header>
+
+      <!------------------------ End of HEADER ---------------------------------->
+
+
+      <div class="hero__container">
+        <div class="hero__img__1">
+          <img src="images/hero-image.png" alt="hero-image">
+        </div>
+        <div class="hero__img__2">
+          <img src="images/hero-image2.png" alt="hero-image">
+        </div>
+        <div class="hero__img__3">
+          <img src="images/hero-img3.png" alt="hero-image">
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
