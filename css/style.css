@@ -154,6 +154,12 @@
   margin-right: 0.8rem;
 }
 
+
+.close__btn {
+  background: url(../images/xmark.svg);
+  background-repeat: no-repeat;
+}
+
 .header__text {
   width: 265.13px;
   height: 22px;
@@ -233,10 +239,14 @@
 }
 
 /* --------------------------------- Search Result ----------------------- */
+#search-result {
+  display: none;
+}
+
 .search__content {
   display: grid;
   grid-template-columns: 70% 30%;
-  padding: 1.5rem;
+  padding: 2.5rem;
   grid-gap: 2rem;
 }
 

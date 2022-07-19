@@ -23,6 +23,15 @@ dropdowns.forEach(dropdown => {
 var searchInput = document.querySelector('#searchInput');
 searchInput.onkeydown = function(e){
 
+  // Change the searchbar icon and clear text when click on cross icon
+  document.querySelector(".search__icon").style.display="none";
+  const clearText= document.querySelector(".header__icon").classList.add("close__btn");
+
+
+
+  document.querySelector(".hero__container").style.display="none";
+  document.querySelector("#search-result").style.display="block";
+
   if(e.keyCode == 13){
     let value = searchInput.value;
     let target = document.querySelector('search-result');
