@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 .nav__text {
   font-family: 'Manrope';
   font-style: normal;
@@ -17,6 +16,7 @@
   line-height: 22px;
   /* identical to box height */
   color: #000000;
+  margin-left: 17px;
 }
 
 .main__container {
@@ -37,17 +37,20 @@
 .brand {
   display: flex;
   width: 100%;
-  padding: 1rem;
+  height: 60px;
   align-items: center;
+  padding: 14px 15px;
+}
+
+.brand .nav__text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 0;
 }
 
 .brand__icon {
-  width: 7.42px;
-  height: 7.79px;
-  padding: 0.5rem;
-  margin-right: 1.2rem;
-  background: #FF7474;
-  box-shadow: 1px 1px 0px rgba(102, 111, 130, 0.175243);
+  margin-right: 22px;
+  margin-bottom: -6px;
 }
 
 .brand__name {
@@ -60,14 +63,16 @@
 }
 
 .sidebar__nav {
-  width: 200px;
-  height: 530px;
   padding: 1rem;
 }
 
 .sidebar__nav__item {
   position: relative;
   margin-bottom: 1rem;
+}
+
+.sidebar__nav__item img {
+  width: 14px;
 }
 
 .nav__icon {
@@ -77,12 +82,23 @@
 }
 
 .dashboard {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+}
+
+.sidebar__dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__dropdown_toggler {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .sidebar__dropdown__content {
@@ -94,7 +110,9 @@
 }
 
 .nav__sub__menu {
-  padding: 8px 0 11px 35px;
+  border-left: 1px solid #DBE0E8;
+  margin: 8px;
+  padding: 0px 6px;
   display: none;
 }
 
@@ -103,20 +121,17 @@
 }
 
 .downbutton {
-  position: absolute;
-  left: 10rem;
+  opacity: 1;
+  margin-right: 0;
 }
+
 .rotate__btn {
   transform: rotate(180deg);
 }
 
-
-
-
-
 /* ------------------------------------ HEADER BASE ----------------------- */
 .main__section {
-  width: 100%;
+  width: calc(100% - 239px);
 }
 
 .header__base {
@@ -125,6 +140,7 @@
   background: #FFFFFF;
   box-shadow: 4px 0px 16px 10px rgba(30, 30, 30, 0.08);
   display: flex;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -133,7 +149,7 @@
   height: 22px;
   font-size: 22px;
   line-height: 22px;
-/* identical to box height */
+  /* identical to box height */
   opacity: 0.3;
   margin-right: 0.8rem;
 }
@@ -144,8 +160,13 @@
   opacity: 0.3;
 }
 
-.header__text input[type="text"]{
+.header__text input[type="text"] {
   width: 100%;
+}
+
+.search-input {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .header__bell {
@@ -153,16 +174,30 @@
   height: 25px;
   background: #EFF3F9;
   border-radius: 2px;
+  display: flex;
   margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .header__bell__icon {
   font-size: 12px;
-
-/* identical to box height */
+  /* identical to box height */
   color: #000000;
   opacity: 0.5;
   align-items: center;
+}
+
+.bell-active {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background: #F44336;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
 }
 
 .header__base__logo {
@@ -174,7 +209,6 @@
 
 .header__left {
   display: flex;
-  margin-right: 49rem;
 }
 
 .header__right {
@@ -182,7 +216,11 @@
 }
 
 /* ------------------------------------ HERO SECTION ----------------------- */
-.hero__img__1{
+.hero__container, .hero_img, .hero_img img {
+  width: 100%;
+}
+
+.hero__img__1 {
   height: 568.53px;
 }
 
@@ -192,4 +230,85 @@
 
 .hero__img__3 {
   height: 590.83px;
+}
+
+/* --------------------------------- Search Result ----------------------- */
+.search__content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 1.5rem;
+  grid-gap: 2rem;
+}
+
+.search__content .search__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.accounts__contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.5rem;
+  padding: 2rem;
+}
+
+.account__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account__content__left {
+  display: flex;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+
+.account__content__left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.account__content__left .heading {
+  font-weight: 700;
+  line-height: 22px;
+  margin-left: 0;
+  opacity: 1;
+}
+
+.account__content__left .text {
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-left: 0;
+}
+
+.account__content__right {
+  width: 53px;
+  height: 30px;
+  border: 1px solid #FF6059;
+  border-radius: 2px;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+
+.account__content__right p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FF6059;
+}
+
+.quick__action__content {
+  padding-top: 1.2rem;
+}
+
+.search__page__right .text {
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 19px;
 }

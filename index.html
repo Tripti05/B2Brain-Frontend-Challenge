@@ -30,7 +30,9 @@
 
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand__icon"></div>
+        <div class="brand__icon">
+          <img src="./images/Shape.png" alt="B2Brain logo" />
+        </div>
         <span class="nav__text">B2Brain</span>
       </div>
 
@@ -38,30 +40,32 @@
       <ul class="sidebar__nav">
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/home.png" alt="dashboard icon" />
             <span class="nav__text dashboard">Dashboard</span>
           </a>
         </li>
 
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/star.png" alt="intels icon" />
             <span class="nav__text">Intels</span>
           </a>
         </li>
 
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/user.png" alt="leads icon" />
             <span class="nav__text">Leads</span>
           </a>
         </li>
 
         <li class="sidebar__nav__item dropdown">
           <a class="sidebar__dropdown" href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
-            <span class="nav__text">Accounts</span>
-            <span class="fas fa-caret-down nav__icon downbutton"></span>
+            <img src="./images/building.png" alt="Accounts icon" />
+            <div class="sidebar__dropdown_toggler">
+              <span class="nav__text">Accounts</span>
+              <img src="./images/chevron-down.png" class=" nav__icon downbutton" alt="donw arrow icon" />
+            </div>
           </a>
           <ul class="nav__sub__menu">
             <li><a class="nav__text sidebar__dropdown__content">Manage All</a></li>
@@ -72,9 +76,15 @@
 
         <li class="sidebar__nav__item dropdown">
           <a class="sidebar__dropdown" href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
-            <span class="nav__text">Preferences</span>
-            <span class="fas fa-caret-down nav__icon downbutton"></span>
+
+            <img src="./images/cog.png" alt="Preferences icon" />
+
+            <div class="sidebar__dropdown_toggler">
+              <span class="nav__text">Preferences</span>
+              <span>
+              <img src="./images/chevron-down.png" class=" nav__icon downbutton" alt="donw arrow icon" />
+            </span>
+            </div>
           </a>
           <ul class="nav__sub__menu">
             <li><a class="nav__text sidebar__dropdown__content">Product Focus</a></li>
@@ -86,21 +96,21 @@
 
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/link.png" alt="Integrations icon" />
             <span class="nav__text">Integrations</span>
           </a>
         </li>
 
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/users.png" alt="Team icon" />
             <span class="nav__text">Team</span>
           </a>
         </li>
 
         <li class="sidebar__nav__item">
           <a href="#">
-            <i class="fas fa-regular fa-star nav__icon"></i>
+            <img src="./images/comments-alt.png" alt="Help/Support icon" />
             <span class="nav__text">Help/Support</span>
           </a>
         </li>
@@ -114,19 +124,22 @@
 
       <header class="header__base">
         <div class="header__left">
-          <div class="header__icon"><i class="fas fa-regular fa-star nav__icon"></i></div>
+          <div class="header__icon">
+            <img src="./images/search.png" alt="search icon" />
+          </div>
           <div>
-            <form action="/" method="get">
+            <!-- <form id="form" method="post"> -->
               <div class="nav__text header__text">
-                <input id="searchInput" type="text" name="" value="" placeholder="Search by account name or website" />
+                <input id="searchInput" class="search-input" type="text" name="" value="" placeholder="Search by account name or website" />
               </div>
-            </form>
+            <!-- </form> -->
           </div>
         </div>
 
         <div class="header__right">
           <div class="header__bell">
-            <i class="fas fa-regular fa-star header__bell__icon"></i>
+            <img src="./images/bell.png" alt="notification icon"/>
+            <span class="bell-active"></span>
           </div>
 
           <div class="header__base__logo"></div>
@@ -138,18 +151,132 @@
 
 
       <div class="hero__container">
-        <div class="hero__img__1">
+        <div class="hero_img hero__img__1">
           <img src="images/hero-image.png" alt="hero-image">
         </div>
-        <div class="hero__img__2">
+        <div class="hero_img hero__img__2">
           <img src="images/hero-image2.png" alt="hero-image">
         </div>
-        <div class="hero__img__3">
+        <div class="hero_img hero__img__3">
           <img src="images/hero-img3.png" alt="hero-image">
         </div>
       </div>
 
+      <section id="search-result">
+        <!-- here will be the search result -->
+         <div class="search__content">
+           <div class="search__page__left">
+             <h3 class="nav__text search__heading">Similar accounts</h3>
+             <div class="accounts__contents">
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
 
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+
+
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+
+
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+
+
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+
+
+                  <div class="account__content">
+                    <div class="account__content__left">
+                      <img src="images/Logo.png" alt="logo-img">
+                      <div class="">
+                        <h4 class="nav__text heading">Harrow Inc</h4>
+                        <p class="nav__text text">www.harrow.com</p>
+                      </div>
+                    </div>
+                    <div class="account__content__right">
+                      <p>Track</p>
+                    </div>
+                  </div>
+             </div>
+           </div>
+
+           <div class="search__page__right">
+             <h3 class="nav__text search__heading">Quick Actions</h3>
+
+          <div class="quick__action__content">
+            <p class="nav__text text">Track new account</p>
+            <p class="nav__text text">Bulk track accounts</p>
+            <p class="nav__text text">Manage Account</p>
+          </div>
+
+           </div>
+         </div>
+      </section>
 
     </div>
 
